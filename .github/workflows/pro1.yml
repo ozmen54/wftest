@@ -34,8 +34,8 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: true
-          tags: aozmen54/wftest
+          push: false
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/wftest:latest
 
           
         
